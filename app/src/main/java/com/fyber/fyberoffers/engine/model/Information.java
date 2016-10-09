@@ -1,0 +1,29 @@
+package com.fyber.fyberoffers.engine.model;
+
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+
+/**
+ * Created by Hend-PC on 10/8/2016.
+ */
+
+public class Information implements Serializable {
+
+    @SerializedName("app_name")
+    private String mAppName;
+    @SerializedName("appid")
+    private String mAppId;
+    @SerializedName("virtual_currency")
+    private String mVirtualCurrency;
+
+    // this field is not in the documentation but I can see it in the response
+    @SerializedName("virtual_currency_sale_enabled")
+    private Boolean mVirtualCurrencySaleEnabled;
+    @SerializedName("country")
+    private String mCountry;
+    @SerializedName("language")
+    private String mLanguage;
+    @SerializedName("support_url")
+    private String mSupportUrl;
+}
